@@ -10,7 +10,12 @@ class vertex:
 
 
 class spring_edge:
-    ...
+    vertex_a = 0
+    vertex_b = 0
+
+    def __init__(self, vertex_a, vertex_b) -> None:
+        self.vertex_a = vertex_a
+        self.vertex_b = vertex_b
 
 class blob:
     ...

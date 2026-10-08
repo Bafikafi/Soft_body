@@ -6,7 +6,8 @@ import soft_body_parts
 # importing sys module
 import sys
 
-vertex = soft_body_parts.vertex(100, 100)
+vertex = [soft_body_parts.vertex(100, 100), soft_body_parts.vertex(200, 100)]
+edge = soft_body_parts.spring_edge(vertex[0], vertex[1])
 
 # initialising pygame
 pygame.init()
@@ -18,7 +19,8 @@ display = pygame.display.set_mode((500, 500))
 while True:
     # creating a loop to check events that
     # are occuring
-    renderer.render(display, vertex)
+    renderer.redner_edge_debug(display, edge)
+    renderer.render_debug(display, vertex)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
