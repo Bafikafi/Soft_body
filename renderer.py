@@ -21,3 +21,4 @@ class renderer:
             a_position = (objs.vertex_a.x, objs.vertex_a.y)
             b_position = (objs.vertex_b.x, objs.vertex_b.y)
             pygame.draw.line(display, (0, 255, 0), a_position, b_position)
+# helo
